@@ -5,15 +5,14 @@
 <meta name="viewport" content="width=device-width">
 <title>Certifcates-modal Test</title>
 <script>
-    var _trustvox_certificate = {
-      certificateId: 'staples'
-    };
+  var _trustvox_certificate = _trustvox_certificate || [];
+  _trustvox_certificate.push(['_certificateId', 'staples']);
 
-    (function() {
-       var tv = document.createElement('script'); tv.type = 'text/javascript'; tv.async = true;
-       tv.src = '//s3-sa-east-1.amazonaws.com/trustvox-certificate-modal-js/widget.js';
-       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tv, s);
-     })();
+  (function() {
+   var tv = document.createElement('script'); tv.type = 'text/javascript'; tv.async = true;
+   tv.src = '//s3-sa-east-1.amazonaws.com/trustvox-certificate-modal-js/widget.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tv, s);
+   })();
 </script>
 </head>
 <body>
